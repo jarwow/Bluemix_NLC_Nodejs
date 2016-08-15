@@ -1,7 +1,7 @@
 # Bluemix_NLC_Nodejs
 Use natural language classifier API on Bluemix by Node.js
 
-[![Node.js 4.3.1](https://img.shields.io/badge/Node.js-4.3.1-orange.svg)](https://nodejs.org/en/)
+[![Node.js 4.4.5](https://img.shields.io/badge/Node.js-4.3.1-orange.svg)](https://nodejs.org/en/)
 [![Platforms OS X | Windows | Linux |](https://img.shields.io/badge/Platforms-OS%20X%20%7C%20Windows%20%7C%20Linux%20-lightgray.svg)](https://nodejs.org/en/)
 
 # What is this repository for? ###
@@ -30,7 +30,7 @@ Use natural language classifier API on Bluemix by Node.js
 
 6. You will see Sample page (non-funciton).
 
-7. Train you data by `node NLC.js` first (Training_EVA.csv).
+7. Train you data by `node NLC.js` first (Training_data.csv).
 
 8. use your classifier_id in Web app or NLC.js.
 
