@@ -44,5 +44,4 @@ Use natural language classifier API on Bluemix by Node.js
 
 # Contribution guidelines ###
 * [IBM Watson Developer Cloud](https://www.ibm.com/watson/developercloud/doc/nl-classifier/)
-* Q&A was collected on [長榮航空常見問答](http://www.evaair.com/zh-tw/frequently-asked-questions/)
 * Bo Cheng Huang
