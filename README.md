@@ -17,17 +17,20 @@ Use natural language classifier API on Bluemix by Node.js
 
 2. Oepn your Terminal/Command Line Tool.
 
-3. go to Project Path: cd /path
+3. go to Project Path: 
+    ```cd /path```
 
-4. Install modeules: npm install (if you encouter permission problems: sudo npm install)
+4. Install modeules: 
+    `npm install` (if you encouter permission problems: sudo npm install)
 
-4. run the project: node index.js
+4. run the project: 
+    `node index.js`
 
 5. Open 127.0.0.1:3000 on your browser.
 
 6. You will see Sample page (non-funciton).
 
-7. Train you data by NLC.js first (Training_EVA.csv).
+7. Train you data by `node NLC.js` first (Training_EVA.csv).
 
 8. use your classifier_id in Web app or NLC.js.
 
