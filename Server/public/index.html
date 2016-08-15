@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NLC</title>
+	<style type="text/css">
+		#data {
+			width: 200px;
+			height: 25px;
+			font-size: 15px;
+		}
+		#ref {
+			width: 500px;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.js"></script>
+
+<h1>Natural Language Classifier</h1>
+<input type="text" name="input" id="data">
+<input type="submit" name="submit" onclick="retrive();">
+<!-- <p id="result"></p> -->
+<h3 id="classes"></h3>
+<h3 id="confidence"></h3>
+<a href="classes.html">Classes Refrence</a><br><br>
+<iframe src="" id="ref"></iframe>
+<p>Q&A was collected on <a href="http://www.evaair.com/zh-tw/frequently-asked-questions/">長榮航空常見問答</a><br><br></p>
+
+
+<script type="text/javascript">
+	var socket = io("http://127.0.0.1:3000");
+
+	function retrive() {
+		var msgin = document.getElementById('data').value;
+		socket.emit('classify', msgin);
+	}
+
+	socket.on('result', function (msgin) {
+		console.log(msgin);
+		var classes = document.getElementById('classes');
+		var confidence = document.getElementById('confidence');
+		var jsonData = JSON.parse(msgin);
+		console.log(jsonData.classes[0].class_name);
+		console.log(jsonData.classes[0].confidence);
+		var classesData = jsonData.classes[0].class_name;
+		var confidenceData = jsonData.classes[0].confidence;
+		classes.innerHTML = "Top class: " + classesData;
+		confidence.innerHTML = "Confidence: " + confidenceData;
+
+		var ref = document.getElementById("ref");
+		ref.src = "resource/" + classesData + ".html";
+
+	});
+
+</script>
+</body>
+</html>
