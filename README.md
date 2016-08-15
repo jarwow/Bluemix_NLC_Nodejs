@@ -11,6 +11,8 @@ Use natural language classifier API on Bluemix by Node.js
 
 # How do I get set up? ###
 
+0. Read [IBM Watson Developer Cloud](https://www.ibm.com/watson/developercloud/doc/nl-classifier/) to know concept and flow.
+
 1. Install nodejs on your computer: https://nodejs.org/en/
 
 2. Oepn your Terminal/Command Line Tool.
