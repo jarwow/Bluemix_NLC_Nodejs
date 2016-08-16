@@ -11,7 +11,7 @@ Use natural language classifier API on Bluemix by Node.js
 
 # How do I get set up? ###
 
-0. Read [IBM Watson Developer Cloud](https://www.ibm.com/watson/developercloud/doc/nl-classifier/) to know concept and flow. Sign up/in on Bluemix and crate a Retreive and Rank service with usr/pwd.
+0. Read [IBM Watson Developer Cloud](https://www.ibm.com/watson/developercloud/doc/nl-classifier/) to know concept and flow. Sign up/in on [Bluemix](ng.bluemix.net) and crate a Retreive and Rank service with `usr/pwd`.
 
 1. Install nodejs on your computer: https://nodejs.org/en/
 
